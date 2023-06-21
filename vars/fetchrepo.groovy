@@ -1,7 +1,7 @@
-def callrepo(String repoUrl){
-  pipeline{
+def callrepo(String repoUrl) {
+  pipeline {
     agent any
-    stages{
+    stages {
       stage("init"){
         steps{
           git_branch: 'main'
@@ -10,5 +10,5 @@ def callrepo(String repoUrl){
       }
     }
   }
-          
+}       
   
