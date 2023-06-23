@@ -4,7 +4,7 @@ def callrepo(String repoUrl) {
     stages {
       stage("init"){
         steps{
-          git_branch: 'master'
+          git_branch: 'main'
           url: "${repoUrl}"
         }
       }
